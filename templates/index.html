@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GitHub badge generator</title>
+      <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+         />
+   </head>
+
+    <body>
+
+<h1>Get GitHub Badges</h1>
+<p>Enter search terms, comma separated, to generate HTML for GitHub badges that you can copy paste into your README file or anywhere else.</p>
+
+<p><b>NOTE: we use fuzzy search to select the best appropriate badge. Please verify that the badges you get are what you wanted</b></p>
+<form action="/">
+    <input type="text" name="q", value="{{q}}">
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Badge preview</h3>
+{{unescaped|safe}}
+
+<h3>Raw HTML</h3><pre>
+{{unescaped}}
+</pre>
+
+</body>
+</html>
+
+
